@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brian Skate Co.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Waypoints JavaScript Jquery File -->
+    <script src="jquery.waypoints.min.js"></script>
+
+    <!-- Main javascript file -->
+    <script src="main.js"></script>
+
+    <!--Animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <!-- BootStrap Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!--Main CSS -->
+    <link rel="stylesheet" href="main.css"/>
+  </head>
+
+  <body onload="shakeBox()">
+
+    <!-- the floating navigation bar -->
+    <div class="animated fadeInDown navigation">
+      <h4><a href="#welcomeSec">Brian Skate Co.<a></h4>
+      <ul>
+        <li><a href="#skatePackSec">Skate Pack</a></li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <!-- Intro section with intro copy -->
+    <div class="welcomeSec container" id="welcomeSec">
+      <div class="row">
+
+        <div class="container welcomeSecSub welcomeSecLeft col-sm-7 col-xs-7 col-md-7 col-lg-7">
+          <div class="animated fadeInLeft welcomeSecLeftText">
+            <h1>Down to Skate?</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit viverra neque dui, praesent tristique luctus sociosqu enim venenatis fringilla netus semper commodo, mollis ullamcorper tincidunt diam dictum congue proin senectus scelerisque accumsan.</p>
+          </div>
+        </div>
+
+        <div class="container welcomeSecSub welcomeSecRight col-sm-5 col-xs-5 col-md-5 col-lg-5">
+          <img class="animated bounceInUp delay-1s" src="welcomeSkate.png"/>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Product pack is introduced here -->
+    <div class="skatePackSec container" id="skatePackSec">
+      <div class="skatePackSecText animated fadeInDown">
+        <h1>Behold: The Skate Pack</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pharetra nullam pellentesque commodo, fusce porta nisi nulla sociis conubia sed torquent eget sodales, imperdiet suscipit dis vitae fringilla nascetur tempus mollis fermentum iaculis..</p>
+      </div>
+
+      <div class="box animated rollIn delay-1s">
+        <img src="box.png" class="animated pulse infinite delay-3s"/>
+      </div>
+    </div>
+
+    <!-- Product pack content is explained here -->
+    <div class="insideSec container">
+    </div>
+
+    <!-- This section will direct users to order the pack -->
+    <div class="orderSec container">
+    </div>
+
+    <!-- Footer will contain important nav links -->
+    <footer></footer>
+  </body>
+</html>
