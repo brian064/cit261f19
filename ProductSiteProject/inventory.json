@@ -1,0 +1,66 @@
+{
+  "decks":[
+    {
+      "name" : "deck1",
+      "imgUrl" : "",
+      "stock" : 5;
+    },
+    {
+      "name" : "deck2",
+      "imgUrl" : "",
+      "stock" : 5;
+    }
+  ],
+
+  "shirts":[
+    {
+      "name" : "shirt1",
+      "imgUrl" : "",
+      "stock" : 5;
+    },
+    {
+      "name" : "shirt2",
+      "imgUrl" : "",
+      "stock" : 5;
+    }
+  ],
+
+  "wheels":[
+    {
+      "name" : "wheels1",
+      "imgUrl" : "",
+      "stock" : 5;
+    },
+    {
+      "name" : "wheels2",
+      "imgUrl" : "",
+      "stock" : 5;
+    }
+  ],
+
+  "wax":[
+    {
+      "name" : "wax1",
+      "imgUrl" : "",
+      "stock" : 5;
+    },
+    {
+      "name" : "wax2",
+      "imgUrl" : "",
+      "stock" : 5;
+    }
+  ],
+
+  "trucks":[
+    {
+      "name" : "trucks1",
+      "imgUrl" : "",
+      "stock" : 5;
+    },
+    {
+      "name" : "trucks2",
+      "imgUrl" : "",
+      "stock" : 5;
+    }
+  ],
+}

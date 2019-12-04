@@ -13,7 +13,8 @@
     <!-- Waypoints JavaScript Jquery File -->
     <script src="jquery.waypoints.min.js"></script>
 
-    <!-- Main javascript file -->
+    <!-- Main javascript files -->
+    <script src="inventory.js"></script>
     <script src="main.js"></script>
 
     <!--Animate.css-->
@@ -26,15 +27,80 @@
     <link rel="stylesheet" href="main.css"/>
   </head>
 
-  <body onload="shakeBox()">
+  <body>
+
+    <!-- the checkout section -->
+    <div class="checkOutSec container">
+
+      <div class="deckPage checkoutPage animated fadeIn">
+        <h1>Choose a Deck</h1>
+
+        <div class="item container deck1">
+          <h3>DECK 1</h3>
+        </div>
+
+        <div class="item container deck2">
+          <h3>DECK 2</h3>
+        </div>
+
+        <button class="checkOutBtn">CANCEL</button>
+        <button class="toWheels">NEXT</button>
+      </div>
+
+      <div class="wheelsPage checkoutPage animated fadeIn">
+        <h1>Choose Wheels</h1>
+
+        <div class="item container wheels1">
+          <h3>WHEELS 1</h3>
+        </div>
+
+        <div class="item container wheels2">
+          <h3>WHEELS 2</h3>
+        </div>
+
+        <button class="toDecks">BACK</button>
+        <button class="toTrucks">NEXT</button>
+      </div>
+
+      <div class="trucksPage checkoutPage animated fadeIn">
+        <h1>Choose Trucks</h1>
+
+        <div class="item container trucks1">
+          <h3>TRUCKS 1</h3>
+        </div>
+
+        <div class="item container trucks2">
+          <h3>TRUCKS 2</h3>
+        </div>
+
+        <button class="toWheels">BACK</button>
+        <button class="toWax">NEXT</button>
+      </div>
+
+      <div class="waxPage checkoutPage animated fadeIn">
+        <h1>Choose Wax</h1>
+
+        <div class="item container wax1">
+          <h3>WAX 1</h3>
+        </div>
+
+        <div class="item container wax2">
+          <h3>WAX 2</h3>
+        </div>
+
+        <button class="toTrucks">BACK</button>
+        <button class="toWax">NEXT</button>
+      </div>
+    </div>
 
     <!-- the floating navigation bar -->
     <div class="animated fadeInDown navigation">
       <h4><a href="#welcomeSec">Brian Skate Co.<a></h4>
       <ul>
         <li><a href="#skatePackSec">Skate Pack</a></li>
-        <li>About</li>
-        <li>Contact</li>
+        <li><a href="#insideSec">What's Inside</a></li>
+        <!-- <li><a href="#orderSec">Order Now</a></li> -->
+        <li class="checkOutBtn">Order Now</li>
       </ul>
     </div>
 
@@ -63,17 +129,31 @@
         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pharetra nullam pellentesque commodo, fusce porta nisi nulla sociis conubia sed torquent eget sodales, imperdiet suscipit dis vitae fringilla nascetur tempus mollis fermentum iaculis..</p>
       </div>
 
-      <div class="box animated rollIn delay-1s">
+      <div class="box animated rollIn delay-1s" onload="shakeBox()">
         <img src="box.png" class="animated pulse infinite delay-3s"/>
       </div>
     </div>
 
     <!-- Product pack content is explained here -->
-    <div class="insideSec container">
+    <div class="insideSec container" id="insideSec">
+      <h1 id="insideSecTitle" class="animated fadeInLeft">What's Inside?</h1>
+      <div class="container insideGallery animated fadeInRight">
+        <img src="welcomeSkate.png"/><h3>A Deck</h3><hr>
+        <!-- <img src="vansShirt.jpg"/><h3>A Shirt</h3><hr> -->
+        <img src="wheels.png"/><h3>Wheels</h3><hr>
+        <img src="trucks.jpg"/><h3>Trucks</h3><hr>
+        <img src="wax.png"/><h3>Wax</h3>
+      </div>
     </div>
 
     <!-- This section will direct users to order the pack -->
-    <div class="orderSec container">
+    <div id="orderSec" class="orderSec container">
+      <h1>Everything You Need to Shred.<br/> All at an Affordable Price.</h1>
+
+      <div class="skater">
+      </div>
+
+      <button class="btn btn-warning orderBtn checkOutBtn">ORDER NOW</button>
     </div>
 
     <!-- Footer will contain important nav links -->
