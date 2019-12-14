@@ -3,59 +3,59 @@ const inventory = {
   "decks":[
     {
       "name" : "deck1",
-      "stock" : 23
+      "stock" : 5
     },
     {
       "name" : "deck2",
-      "stock" : 0
+      "stock" : 2
     }
   ],
 
   "wheels":[
     {
       "name" : "wheels1",
-      "stock" : 0
+      "stock" : 4
     },
     {
       "name" : "wheels2",
-      "stock" : 15
+      "stock" : 1
     }
   ],
 
   "wax":[
     {
       "name" : "wax1",
-      "stock" : 2
+      "stock" : 0
     },
     {
       "name" : "wax2",
-      "stock" : 6
+      "stock" : 3
     }
   ],
 
   "trucks":[
     {
       "name" : "trucks1",
-      "stock" : 15
+      "stock" : 3
     },
     {
       "name" : "trucks2",
-      "stock" : 13
+      "stock" : 5
     }
   ],
 }
 
-if (inventory.decks[0].stock <= 0) {
-  console.log("Out of Stock :(");
-} else {
-  console.log(`Available! :) (${inventory.decks[0].stock} left)`);
-}
+// if (inventory.decks[0].stock <= 0) {
+//   console.log("Out of Stock :(");
+// } else {
+//   console.log(`Available! :) (${inventory.decks[0].stock} left)`);
+// }
 
 $(document).ready(function() {
 
   //SELECT DECKS FUNCTIONALITY
 
-  $(".deck1").click(function() {
+  $(".d1").click(function() {
 
     if (inventory.decks[0].stock <= 0) {
       alert("Sorry, deck is out of stock :(");
@@ -64,7 +64,7 @@ $(document).ready(function() {
     }
   })
 
-  $(".deck2").click(function() {
+  $(".d2").click(function() {
 
     if (inventory.decks[1].stock <= 0) {
       alert("Sorry, deck is out of stock :(");
@@ -75,7 +75,7 @@ $(document).ready(function() {
 
   //SELECT WHEELS FUNCTIONALITY
 
-  $(".wheels1").click(function() {
+  $(".wh1").click(function() {
 
     if (inventory.wheels[0].stock <= 0) {
       alert("Sorry, wheel pack is out of stock :(");
@@ -84,7 +84,7 @@ $(document).ready(function() {
     }
   })
 
-  $(".wheels2").click(function() {
+  $(".wh2").click(function() {
 
     if (inventory.wheels[1].stock <= 0) {
       alert("Sorry, wheel pack is out of stock :(");
@@ -95,7 +95,7 @@ $(document).ready(function() {
 
   //SELECT TRUCKS FUNCTIONALITY
 
-  $(".trucks1").click(function() {
+  $(".t1").click(function() {
 
     if (inventory.trucks[0].stock <= 0) {
       alert("Sorry, trucks are out of stock :(");
@@ -104,7 +104,7 @@ $(document).ready(function() {
     }
   })
 
-  $(".trucks2").click(function() {
+  $(".t2").click(function() {
 
     if (inventory.trucks[1].stock <= 0) {
       alert("Sorry, trucks are out of stock :(");
@@ -115,7 +115,7 @@ $(document).ready(function() {
 
   //SELECT WAX FUNCTIONALITY
 
-  $(".wax1").click(function() {
+  $(".w1").click(function() {
 
     if (inventory.wax[0].stock <= 0) {
       alert("Sorry, wax is out of stock :(");
@@ -124,13 +124,28 @@ $(document).ready(function() {
     }
   })
 
-  $(".wax2").click(function() {
+  $(".w2").click(function() {
 
     if (inventory.wax[1].stock <= 0) {
       alert("Sorry, wax is out of stock :(");
     } else {
       alert(`Wax 2 Selected! :) (${inventory.wax[1].stock} in stock)`)
     }
+  })
+
+  $(".confirmBtn").click(function() {
+
+    inventory.decks[0].stock -= 1;
+    inventory.decks[1].stock -= 1;
+
+    inventory.wheels[0].stock -= 1;
+    inventory.wheels[1].stock -= 1;
+
+    inventory.trucks[0].stock -= 1;
+    inventory.trucks[1].stock -= 1;
+
+    inventory.wax[0].stock -= 1;
+    inventory.wax[1].stock -= 1;
   })
 
 })

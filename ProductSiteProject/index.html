@@ -35,11 +35,11 @@
       <div class="deckPage checkoutPage animated fadeIn">
         <h1>Choose a Deck</h1>
 
-        <div class="item container deck1">
+        <div class="item container deck1 d1">
           <h3>DECK 1</h3>
         </div>
 
-        <div class="item container deck2">
+        <div class="item container deck2 d2">
           <h3>DECK 2</h3>
         </div>
 
@@ -50,11 +50,11 @@
       <div class="wheelsPage checkoutPage animated fadeIn">
         <h1>Choose Wheels</h1>
 
-        <div class="item container wheels1">
+        <div class="item container wheels1 wh1">
           <h3>WHEELS 1</h3>
         </div>
 
-        <div class="item container wheels2">
+        <div class="item container wheels2 wh2">
           <h3>WHEELS 2</h3>
         </div>
 
@@ -65,11 +65,11 @@
       <div class="trucksPage checkoutPage animated fadeIn">
         <h1>Choose Trucks</h1>
 
-        <div class="item container trucks1">
+        <div class="item container trucks1 t1">
           <h3>TRUCKS 1</h3>
         </div>
 
-        <div class="item container trucks2">
+        <div class="item container trucks2 t2">
           <h3>TRUCKS 2</h3>
         </div>
 
@@ -80,16 +80,39 @@
       <div class="waxPage checkoutPage animated fadeIn">
         <h1>Choose Wax</h1>
 
-        <div class="item container wax1">
+        <div class="item container wax1 w1">
           <h3>WAX 1</h3>
         </div>
 
-        <div class="item container wax2">
+        <div class="item container wax2 w2">
           <h3>WAX 2</h3>
         </div>
 
         <button class="toTrucks">BACK</button>
-        <button class="toWax">NEXT</button>
+        <button class="toFinal">NEXT</button>
+      </div>
+
+      <div class="finalPage checkoutPage animated fadeIn">
+        <h1>Here's Your Order</h1>
+
+        <div class="item container deck1 finalItem">
+          <!-- <h3>WAX 1</h3> -->
+        </div>
+
+        <div class="item container wheels1 finalItem">
+          <!-- <h3>WAX 2</h3> -->
+        </div>
+
+        <div class="item container trucks1 finalItem">
+          <!-- <h3>WAX 1</h3> -->
+        </div>
+
+        <div class="item container wax1 finalItem">
+          <!-- <h3>WAX 2</h3> -->
+        </div>
+
+        <button class="toWax">BACK</button>
+        <button class="checkOutBtn confirmBtn">CONFIRM</button>
       </div>
     </div>
 
@@ -111,7 +134,7 @@
         <div class="container welcomeSecSub welcomeSecLeft col-sm-7 col-xs-7 col-md-7 col-lg-7">
           <div class="animated fadeInLeft welcomeSecLeftText">
             <h1>Down to Skate?</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit velit viverra neque dui, praesent tristique luctus sociosqu enim venenatis fringilla netus semper commodo, mollis ullamcorper tincidunt diam dictum congue proin senectus scelerisque accumsan.</p>
+            <p>Brian Skate Co. aims to deliver you the best beginner skateboarding experience. From here on out, we're definitely down to skate with you.</p>
           </div>
         </div>
 
@@ -126,7 +149,7 @@
     <div class="skatePackSec container" id="skatePackSec">
       <div class="skatePackSecText animated fadeInDown">
         <h1>Behold: The Skate Pack</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit pharetra nullam pellentesque commodo, fusce porta nisi nulla sociis conubia sed torquent eget sodales, imperdiet suscipit dis vitae fringilla nascetur tempus mollis fermentum iaculis..</p>
+        <p>Get everything you need to start skating, delivered right to your door! Our skate pack will provide quality parts and hardware to make sure that you can shred with ease.</p>
       </div>
 
       <div class="box animated rollIn delay-1s" onload="shakeBox()">
@@ -156,7 +179,7 @@
       <button class="btn btn-warning orderBtn checkOutBtn">ORDER NOW</button>
     </div>
 
-    <!-- Footer will contain important nav links -->
+    <!-- Footer Section -->
     <footer></footer>
   </body>
 </html>

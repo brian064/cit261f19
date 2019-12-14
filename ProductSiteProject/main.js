@@ -13,6 +13,7 @@ $(document).ready(function() {
   $(".wheelsPage").hide();
   $(".trucksPage").hide();
   $(".waxPage").hide();
+  $(".finalPage").hide();
 
   // checkOut pages Navigation
   $(".toDecks").click(function() {
@@ -20,6 +21,7 @@ $(document).ready(function() {
     $(".trucksPage").hide();
     $(".waxPage").hide();
     $(".deckPage").show();
+    $(".finalPage").hide();
   })
 
   $(".toWheels").click(function() {
@@ -27,6 +29,7 @@ $(document).ready(function() {
     $(".trucksPage").hide();
     $(".waxPage").hide();
     $(".deckPage").hide();
+    $(".finalPage").hide();
   })
 
   $(".toTrucks").click(function() {
@@ -34,6 +37,7 @@ $(document).ready(function() {
     $(".trucksPage").show();
     $(".waxPage").hide();
     $(".deckPage").hide();
+    $(".finalPage").hide();
   })
 
   $(".toWax").click(function() {
@@ -41,6 +45,24 @@ $(document).ready(function() {
     $(".trucksPage").hide();
     $(".waxPage").show();
     $(".deckPage").hide();
+    $(".finalPage").hide();
+  })
+
+  $(".toFinal").click(function() {
+    $(".wheelsPage").hide();
+    $(".trucksPage").hide();
+    $(".waxPage").hide();
+    $(".deckPage").hide();
+    $(".finalPage").show();
+  })
+
+  $(".confirmBtn").click(function() {
+    var deck1 = "deck1";
+    $(".wheelsPage").hide();
+    $(".trucksPage").hide();
+    $(".waxPage").hide();
+    $(".deckPage").show();
+    $(".finalPage").hide();
   })
 
   // this brings out the checkout menu
