@@ -56,13 +56,10 @@ $(document).ready(function() {
     $(".finalPage").show();
   })
 
-  $(".confirmBtn").click(function() {
-    var deck1 = "deck1";
-    $(".wheelsPage").hide();
-    $(".trucksPage").hide();
-    $(".waxPage").hide();
-    $(".deckPage").show();
-    $(".finalPage").hide();
+  $(".testBtn").click(function() {
+    var targetDiv = document.getElementsByClassName('targetDiv');
+    console.log(targetDiv);
+    targetDiv.textContent = `Hello`;
   })
 
   // this brings out the checkout menu

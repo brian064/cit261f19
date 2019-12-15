@@ -56,6 +56,7 @@ body {
   background-position: center;
   background-size: contain;
   background-color: white;
+  background-repeat: no-repeat;
   margin-right: 20px;
   margin-bottom: 30px;
   color: white;
@@ -96,35 +97,35 @@ body {
 /* ITEM BACKGROUND IMAGES */
 
 .deck1 {
-  background-image: url("welcomeSkate.png");
+  background-image: url("d1.png");
 }
 
 .deck2 {
-  background-image: url("welcomeSkate.png");
+  background-image: url("d2.png");
 }
 
 .wheels1 {
-  background-image: url("wheels.png");
+  background-image: url("w1.png");
 }
 
 .wheels2 {
-  background-image: url("wheels.png");
+  background-image: url("w2.png");
 }
 
 .trucks1 {
-  background-image: url("trucks.jpg");
+  background-image: url("t1.png");
 }
 
 .trucks2 {
-  background-image: url("trucks.jpg");
+  background-image: url("t2.png");
 }
 
 .wax1 {
-  background-image: url("wax.png");
+  background-image: url("wx1.png");
 }
 
 .wax2 {
-  background-image: url("wax.png");
+  background-image: url("wx2.png");
 }
 
 .finalItem {

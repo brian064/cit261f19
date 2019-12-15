@@ -60,6 +60,8 @@ $(document).ready(function() {
     if (inventory.decks[0].stock <= 0) {
       alert("Sorry, deck is out of stock :(");
     } else {
+      localStorage.setItem("deck", "deck1");
+      console.log(localStorage.getItem("deck"));
       alert(`Deck 1 Selected! :) (${inventory.decks[0].stock} in stock)`)
     }
   })
@@ -69,6 +71,8 @@ $(document).ready(function() {
     if (inventory.decks[1].stock <= 0) {
       alert("Sorry, deck is out of stock :(");
     } else {
+      localStorage.setItem("deck", "deck2");
+      console.log(localStorage.getItem("deck"));
       alert(`Deck 2 Selected! :) (${inventory.decks[1].stock} in stock)`)
     }
   })
@@ -80,6 +84,8 @@ $(document).ready(function() {
     if (inventory.wheels[0].stock <= 0) {
       alert("Sorry, wheel pack is out of stock :(");
     } else {
+      localStorage.setItem("wheels", "wheels1");
+      console.log(localStorage.getItem("wheels"));
       alert(`Wheels 1 Selected! :) (${inventory.wheels[0].stock} in stock)`)
     }
   })
@@ -89,6 +95,8 @@ $(document).ready(function() {
     if (inventory.wheels[1].stock <= 0) {
       alert("Sorry, wheel pack is out of stock :(");
     } else {
+      localStorage.setItem("wheels", "wheels2");
+      console.log(localStorage.getItem("wheels"));
       alert(`Wheels 2 Selected! :) (${inventory.wheels[1].stock} in stock)`)
     }
   })
@@ -100,6 +108,8 @@ $(document).ready(function() {
     if (inventory.trucks[0].stock <= 0) {
       alert("Sorry, trucks are out of stock :(");
     } else {
+      localStorage.setItem("trucks", "trucks1");
+      console.log(localStorage.getItem("trucks"));
       alert(`Trucks 1 Selected! :) (${inventory.trucks[0].stock} in stock)`)
     }
   })
@@ -109,6 +119,8 @@ $(document).ready(function() {
     if (inventory.trucks[1].stock <= 0) {
       alert("Sorry, trucks are out of stock :(");
     } else {
+      localStorage.setItem("trucks", "trucks2");
+      console.log(localStorage.getItem("trucks"));
       alert(`Trucks 2 Selected! :) (${inventory.trucks[1].stock} in stock)`)
     }
   })
@@ -120,6 +132,8 @@ $(document).ready(function() {
     if (inventory.wax[0].stock <= 0) {
       alert("Sorry, wax is out of stock :(");
     } else {
+      localStorage.setItem("wax", "wax1");
+      console.log(localStorage.getItem("wax"));
       alert(`Wax 1 Selected! :) (${inventory.wax[0].stock} in stock)`)
     }
   })
@@ -129,23 +143,26 @@ $(document).ready(function() {
     if (inventory.wax[1].stock <= 0) {
       alert("Sorry, wax is out of stock :(");
     } else {
+      localStorage.setItem("wax", "wax2");
+      console.log(localStorage.getItem("wax"));
       alert(`Wax 2 Selected! :) (${inventory.wax[1].stock} in stock)`)
     }
   })
 
   $(".confirmBtn").click(function() {
 
-    inventory.decks[0].stock -= 1;
-    inventory.decks[1].stock -= 1;
+    var deck = localStorage.getItem("deck");
+    var wheels = localStorage.getItem("wheels");
+    var trucks = localStorage.getItem("trucks");
+    var wax = localStorage.getItem("wax");
 
-    inventory.wheels[0].stock -= 1;
-    inventory.wheels[1].stock -= 1;
-
-    inventory.trucks[0].stock -= 1;
-    inventory.trucks[1].stock -= 1;
-
-    inventory.wax[0].stock -= 1;
-    inventory.wax[1].stock -= 1;
+    if (deck) {
+      if (deck == "deck1") {
+        inventory.deck[0].stock -= 1;
+      } else if (deck == "deck2") {
+        inventory.deck[1].stock -= 1;
+      }
+    }
   })
 
 })
